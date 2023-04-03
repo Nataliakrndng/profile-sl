@@ -138,7 +138,7 @@
 
             <div class="resume-title">
                 <h2>Skill</h2>
-                <p>Developed Skills Thoughout My Study</p>
+                <p>Developed Skills Throughout My Study</p>
             </div>
 
             <div class="interests container">
