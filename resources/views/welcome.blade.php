@@ -16,7 +16,11 @@
     <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/gecko.css') }}">
     <title>Profile</title>
 </head>
 <body>
@@ -30,6 +34,7 @@
               <li><a class="nav-link active" href="#header">Home</a></li>
               <li><a class="nav-link" href="#about">About</a></li>
               <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link" href="#gecko">Gecko</a></li>
               <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -267,7 +272,7 @@
 
               <div class="row portfolio-container">
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design regular">
                   <div class="portfolio-wrap">
                     <img src="../img/porto9.png" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -277,7 +282,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-Design">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design great">
                   <div class="portfolio-wrap">
                     <img src="../img/porto1.png" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -358,7 +363,42 @@
                 </div>
               </div>
             </div>
-          </section>
+        </section>
+
+        <section id="gecko" class="gecko">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Gecko</h2>
+                    <p>Geckos based on their type</p>
+                </div>
+                <div class="row">
+                    @foreach ($geckos as $gecko)
+                    <div class="col-md-4">
+                        <div class="card gecko-card" data-toggle="modal" data-target="#geckomodal-{{$gecko['id']}}" data-description="{{$gecko['description']}}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $gecko['name'] }} <span class="badge badge-secondary {{strtolower($gecko['type']) }}">{{ $gecko['type'] }}</span></h5>
+                                <img src="{{asset($gecko['image']) }}" alt="{{ $gecko['name'] }}" class="gecko-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="geckomodal-{{$gecko['id']}}" tabindex="-1" role="dialog" aria-labelledby="geckomodalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">{{ $gecko['name'] }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="description">{{$gecko['description']}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+        </section>
 
         <section id="contact" class="contact">
             <div class="container">
@@ -429,8 +469,8 @@
 
         </section>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../../vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../vendor/glightbox/js/glightbox.min.js"></script>

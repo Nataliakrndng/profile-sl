@@ -1,0 +1,59 @@
+.modal-backdrop {
+    z-index: -1000 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal .modal-content {
+    background-color: #555555
+}
+
+.modal .modal-header .button {
+    color: #fff;
+}
+
+.gecko-card {
+    background: rgba(255, 255, 255, 0.097);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+    color: rgba(246, 246, 246, 0.816);
+}
+
+.gecko-card-header {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gecko-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 3px #555555;
+}
+
+.gecko-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+.card-title {
+    font-weight: bold;
+}
+
+
+.badge.r {
+    background-color: silver;
+}
+.badge.sr {
+    background-color: gold;
+}
+.badge.ssr {
+    background-color: red;
+}
