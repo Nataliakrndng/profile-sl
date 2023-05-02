@@ -6,12 +6,12 @@
 
 <h4 align="center">"Welcome to my portfolio website where I showcase a little bit about me."</h4>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/229364241-0f8e2840-336b-4460-995b-5ecd4b697b6a.gif" alt="preview"> </img> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/235601305-56977cf2-2fa4-407f-b079-5817ec30f3ab.gif" alt="preview"> </img> </p>
 <p align="center"> Here's a preview of this website :) </p>
 
 ## Home
 This is the landing page of this website.
-<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/229365108-1d572f6c-74eb-4ebd-907d-8359eedf4c1b.png" alt="home"> </img> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/235599349-73e4d5a9-0bf6-4658-9aa4-00429ce9e512.png" alt="home"> </img> </p>
 My aim is to make this website look modern, yet still simple, clean and elegant.
 
 ## About
@@ -33,6 +33,13 @@ And you can see the really really really short details about the project when u 
 
 This is the last part of "Portfolio" section
 <p align="center"> <img src="https://user-images.githubusercontent.com/67302201/229366852-756982c5-5b8f-4fe6-8bc3-274dca84c651.png" alt="porto3"> </img> </p>
+
+## Gecko
+So, Gecko is my favorite animal, here are geckos based on their type :)
+<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/235601793-649a266d-cd13-4840-83b9-49a6d4d79fa7.png" alt="gecko 1"> </img> </p>
+
+I use badges with different colors from bootstrap to distinguish one type of gecko from another and im using modal to show the gecko's description
+<p align="center"> <img src="https://user-images.githubusercontent.com/67302201/235603969-f9da106c-ec7d-46ee-9e4e-b6ffd232152e.png" alt="gecko 2"> </img> </p>
 
 ## Contact
 And this is the "Contact" section -- this is how u could reach out to me ;)
